@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./weather.css">
+    <title>Weather</title>
+</head>
+<body>
+    <div class="card">
+        <div class="left">
+            <select name="city" id="city" onchange="fetchWeather()">
+                <option value="臺北市">臺北市</option>
+                <option value="新北市">新北市</option>
+                <option value="基隆市">基隆市</option>
+                <option value="桃園市">桃園市</option>
+                <option value="新竹市">新竹市</option>
+                <option value="宜蘭縣">宜蘭縣</option>
+                <option value="苗栗縣">苗栗縣</option>
+                <option value="彰化縣">彰化縣</option>
+                <option value="南投縣">南投縣</option>
+                <option value="雲林縣">雲林縣</option>
+                <option value="高雄市">高雄市</option>
+                <option value="台南市">台南市</option>
+                <option value="嘉義縣">嘉義縣</option>
+                <option value="屏東縣">屏東縣</option>
+                <option value="花蓮縣">花蓮縣</option>
+                <option value="台東縣">台東縣</option>
+                <option value="澎湖縣">澎湖縣</option>
+                <option value="金門縣">金門縣</option>
+            </select>
+        </div>
+        <div class="right">
+            <h1 id="city-name">臺北市</h1>
+            <div class="weather-info">
+                <p id="weather-description">多雲</p>
+                <p id="high-temp">最高溫: 34°C</p>
+                <p id="low-temp">最低溫: 28°C</p>
+                <p id="rain-probability">降雨機率: 30%</p>
+            </div>
+        </div>
+    </div>
+    <script src="./weather.js"></script>
+</body>
+</html>
